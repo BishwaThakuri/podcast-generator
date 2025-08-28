@@ -1,7 +1,7 @@
 name: "Podcast Generator"
 author: "Bishwa Thakuri"
 description: "Generates a feed for a podcast from a YAML file"
-run:
+runs:
   using: "docker"
   image: "Dockerfile"
 branding:
