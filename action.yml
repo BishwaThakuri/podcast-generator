@@ -1,4 +1,4 @@
-name: "Podcast Generator"
+name: "Podcast RSS Feed Generator"
 author: "Bishwa Thakuri"
 description: "Generates a feed for a podcast from a YAML file"
 runs:
