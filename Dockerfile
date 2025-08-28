@@ -1,15 +1,15 @@
 FROM ubuntu:latest
 
-# Install Python, pip, git, and venv
+# Install default Python 3, pip, git, and venv
 RUN apt-get update && apt-get install -y \
-    python3.10 \
-    python3.10-venv \
+    python3 \
+    python3-venv \
     python3-pip \
     git \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a virtual environment
-RUN python3.10 -m venv /opt/venv
+RUN python3 -m venv /opt/venv
 
 # Upgrade pip and install dependencies inside the venv
 RUN /opt/venv/bin/pip install --upgrade pip PyYAML
